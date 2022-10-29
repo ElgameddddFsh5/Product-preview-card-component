@@ -55,7 +55,6 @@ body {
   .container .img {
     width: 100%;
     height: 290px;
-    background-image: url(/Product-preview-card-component/images/image-product-mobile.jpg);
     background-size: cover;
   }
 }
