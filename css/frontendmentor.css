@@ -1,0 +1,144 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif, "Roboto";
+}
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --font-p-size: 14px;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: var(--Cream);
+  margin-top: 200px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.container .cardd {
+  display: flex;
+  background-color: var(--White);
+  width: 37%;
+  border-radius: 15px;
+}
+@media (max-width: 1440px) {
+  .container .cardd {
+    display: block;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+}
+
+.container .img {
+  width: 50%;
+  background-image: url(/Product-preview-card-component/images/image-product-desktop.jpg);
+  background-size: cover;
+  border-radius: 15px 0 0 15px;
+}
+@media (max-width: 1440px) {
+  .container .img {
+    width: 100%;
+    height: 290px;
+    background-image: url(/Product-preview-card-component/images/images/image-product-mobile.jpg);
+    background-size: cover;
+  }
+}
+
+.container .text {
+  padding: 50px;
+  width: 50%;
+}
+@media (max-width: 1440px) {
+  .container .text {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    height: 300px;
+  }
+}
+.container .text .per {
+  letter-spacing: 8px;
+}
+
+.container .text p {
+  font-size: var(--font-p-size);
+  line-height: 22px;
+  color: var(--Dark-grayish-blue);
+  margin: 0;
+}
+@media (max-width: 1440px) {
+  .container .text p {
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.container .text h2 {
+  color: var(--Very-dark-blue);
+  font-size: 45px;
+  line-height: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+@media (max-width: 1440px) {
+  .container .text h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+    padding: 15px 0px;
+  }
+}
+.container .text .card {
+  color: var(--Dark-cyan);
+  display: flex;
+  align-items: center;
+}
+
+.container .text .card span {
+  font-size: var(--font-p-size);
+  margin-left: 20px;
+  color: var(--Dark-grayish-blue);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container .text .add {
+  background-color: var(--Dark-cyan);
+  width: 100%;
+  height: 50px;
+  color: var(--White);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1440px) {
+  .container .text .add {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+  }
+}
+.container .text .add i {
+  margin-right: 10px;
+}
+
+.container .text .add:hover {
+  background-color: hsl(159, 35%, 19%);
+}
