@@ -44,6 +44,7 @@ body {
     border-radius: 5px;
   }
 }
+
 @media (max-width: 1640px) {
   .container .cardd {
     display: flex;
