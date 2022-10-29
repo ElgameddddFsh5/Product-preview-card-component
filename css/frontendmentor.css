@@ -35,7 +35,7 @@ body {
   width: 37%;
   border-radius: 15px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 767px) {
   .container .cardd {
     display: block;
     width: 100%;
@@ -47,15 +47,15 @@ body {
 
 .container .img {
   width: 50%;
-  background-image: url(/Product-preview-card-component/images/image-product-desktop.jpg);
+  background-image: url(/images/image-product-desktop.jpg);
   background-size: cover;
   border-radius: 15px 0 0 15px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 767px) {
   .container .img {
     width: 100%;
     height: 290px;
-    background-size: cover;
+    background-image: url(/images/image-product-mobile.jpg);
   }
 }
 
@@ -63,7 +63,7 @@ body {
   padding: 50px;
   width: 50%;
 }
-@media (max-width: 1440px) {
+@media (max-width: 767px) {
   .container .text {
     margin: 0;
     padding: 15px;
@@ -81,7 +81,7 @@ body {
   color: var(--Dark-grayish-blue);
   margin: 0;
 }
-@media (max-width: 1440px) {
+@media (max-width: 767px) {
   .container .text p {
     line-height: 15px;
     margin: 0;
@@ -94,7 +94,7 @@ body {
   line-height: 40px;
   font-family: "Times New Roman", Times, serif;
 }
-@media (max-width: 1440px) {
+@media (max-width: 767px) {
   .container .text h2 {
     font-size: 35px;
     font-weight: 700;
@@ -127,7 +127,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 1440px) {
+@media (max-width: 767px) {
   .container .text .add {
     width: 100%;
     height: 50px;
