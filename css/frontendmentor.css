@@ -26,8 +26,6 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  max-width: 65%;
-
 }
 
 .container .cardd {
@@ -36,6 +34,7 @@ body {
   width: 40%;
   border-radius: 15px;
 }
+
 @media (max-width: 767px) {
   .container .cardd {
     display: flex;
@@ -47,7 +46,10 @@ body {
   }
 }
 
-@media (max-width: 1640px) {
+@media (max-width: 1440px) {
+  .container {
+    max-width: 65%;
+  }
   .container .cardd {
     display: flex;
     background-color: var(--White);
@@ -150,4 +152,43 @@ body {
 
 .container .text .add:hover {
   background-color: hsl(159, 35%, 19%);
+}
+
+@media (max-width: 990px) {
+  .container .text .add {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+  }
+}
+@media (max-width: 990px) {
+  .container .text h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+    padding: 15px 0px;
+  }
+}
+@media (max-width: 990px) {
+  .container .text p {
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 990px) {
+  .container .text {
+    margin: 0;
+    padding: 45px 15px;
+    width: 100%;
+    height: 450px;
+  }
+}
+@media (max-width: 990px) {
+  .container .img {
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/image-product-desktop.jpg);
+  }
 }
